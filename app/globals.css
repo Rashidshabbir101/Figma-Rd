@@ -26,4 +26,22 @@
   .right-menu-item {
     @apply flex justify-between px-3 py-2 hover:bg-primary-grey-200 !important;
   }
+
+  /* New utility classes for the transparent and fading GIF */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 3s ease-in-out;
+  }
+
+  .opacity-60 {
+    opacity: 0.6; /* Apply the desired opacity to the GIF */
+  }
 }
